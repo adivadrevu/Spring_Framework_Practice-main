@@ -5,26 +5,54 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\b\fs24 \cf0 \ul \ulc0 SPRING FRAMEWORK:\
-\
+\f0\b\fs24 \cf0 \ul \ulc0 \
+\ulnone # Spring Framework\
 
-\f1\b0 \ulnone -> Invertion of Control (Inc) = A software design principle that gives control of an application flowto an external source(SPRING) rather than application code. \
+\f1\b0 \
+## Key Concepts\
 \
--> Target class = A class which uses other class services/methods or a business logic  is called Target class.\
+### SpringCore1 notes\
 \
--> Dependency Object = Services which are used inside the Target class is called Dependency Object.\
+- **Inversion of Control (IoC)**: A software design principle that gives control of an application flow to an external source rather than the application code.\
 \
--> Dependency Injection = Injecting Dependent Object into Target class. \
+- **Target Class**: A class that uses other class services/methods or business logic is called the Target class.\
 \
--> Setter Injection = Injecting an object into the Target class using \'93Setter\'94 is called Setter Injection.\
+- **Dependency Object**: Services used inside the Target class are called Dependency Objects.\
 \
--> Constructor Injection = Injecting an object into the Target class using \'93Constructor\'94 is called Constructor Injection. \
+- **Dependency Injection**: Injecting Dependent Objects into the Target class.\
+\
+- **Setter Injection**: Injecting an object into the Target class using the setter method is called Setter Injection.\
+\
+- **Constructor Injection**: Injecting an object into the Target class using a constructor is called Constructor Injection.\
+\
+---\
+\
+All the above logic is shown in code format. Please check the code in **SpringCore1**.\
+____________________________________________________________________________
+\f0\b \
 \
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b0 \cf0 ### SpringCore2_ApplicationContext Notes\
 \
-All the above logic is shown in Code format. Please check @\'93 SpringCore1\'94 for the code. \
+- Recreated the SpringCore1 application using an XML-based configuration approach.\
+- Separated classes into different packages and added dependencies in the `pom.xml`.\
+- Changed the JDK version to 14 using the `<properties>` tag.\
+- Used the **ApplicationContext** container and created an `applicationconfig.xml` file to define Beans and perform Dependency Injection.\
+- Defined Beans for all classes in the "main" and "services" packages.\
+- Performed **Setter Injection** using `<property>` and **Constructor Injection** using `<constructor-arg>`.\
 \
-\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+### SpringCore2_BeanFactory Notes\
 \
+- Implemented the same SpringCore1 application using **BeanFactory** for Inversion of Control (IoC).\
+- Added dependencies and JDK version 14 in `pom.xml`.\
+- Defined Beans in an `applicationconfig.xml` file and used **BeanFactory** to manage them.\
+- Demonstrated **Dependency Injection** using both **Setter Injection** with `<property>` and **Constructor Injection** with `<constructor-arg>`.\
+- Explained the difference between **BeanFactory** and **ApplicationContext**, focusing on lazy initialization and IoC management.\
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
 }

@@ -17,9 +17,10 @@ Practicing Spring  Framework from scratch
 
 - **Constructor Injection**: Injecting an object into the Target class using a constructor is called Constructor Injection.
 
-All the above logic is shown in code format. Please check the code in **SpringCore1**.
+### All the above logic is shown in code format. Please check the code in **SpringCore1**.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-## Key Concepts(contd. for SpringCore2 - ApplicationCOntext and BeanFactory)
+### Key Concepts(contd. for SpringCore2 - ApplicationCOntext and BeanFactory)
+
 ### SpringCore2_ApplicationContext 
 - Recreated the SpringCore1 application using an XML-based configuration approach.
 - Separated classes into different packages and added dependencies in the `pom.xml`.
@@ -35,6 +36,8 @@ All the above logic is shown in code format. Please check the code in **SpringCo
 - Demonstrated **Dependency Injection** using both **Setter Injection** with `<property>` and **Constructor Injection** with `<constructor-arg>`.
 - Explained the difference between **BeanFactory** and **ApplicationContext**, focusing on lazy initialization and IoC management.
 
+### All the above logic is shown in code format. Please check the code in **"SpringCore2AC" & "SpringCore2BF"**.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
